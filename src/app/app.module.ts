@@ -20,6 +20,7 @@ import { ImagesComponent } from './images/images.component';
 import { LastvisitComponent } from './lastvisit/lastvisit.component';
 import { PatientComponent } from './patient/patient.component';
 import { PatientdetailComponent } from './patientdetail/patientdetail.component';
+import { MapComponentComponent } from './map-component/map-component.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { PatientdetailComponent } from './patientdetail/patientdetail.component'
     ImagesComponent,
     LastvisitComponent,
     PatientComponent,
-    PatientdetailComponent
+    PatientdetailComponent,
+    MapComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -50,4 +52,10 @@ import { PatientdetailComponent } from './patientdetail/patientdetail.component'
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBGNFxDo-HjdMm51LVZpCRKsW86fuL5hTU`;
+    document.body.appendChild(script);
+  }
+}

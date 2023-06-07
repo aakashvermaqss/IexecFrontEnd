@@ -55,4 +55,7 @@ export class PatientComponent implements OnInit {
     this.dataService.setDataArray(this.dataArray);
     this.router.navigateByUrl('/patientdetail');
   }
+  public viewCurrentLocation(){
+    this.router.navigateByUrl('/currentlocation');
+  }
 }

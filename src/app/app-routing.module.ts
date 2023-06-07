@@ -10,6 +10,7 @@ import { LastvisitComponent } from './lastvisit/lastvisit.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { PatientComponent } from './patient/patient.component';
 import { PatientdetailComponent } from './patientdetail/patientdetail.component';
+import { MapComponentComponent } from './map-component/map-component.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: "appointments",
     component: AppointmentsComponent
+  },
+  {
+    path: "currentlocation",
+    component: MapComponentComponent
   }
 ];
 

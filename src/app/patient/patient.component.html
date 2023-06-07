@@ -1,6 +1,7 @@
 <div class="body">
 <div class="container">
     <h1 class="heading">Patient</h1>
+    <button class="form-control btn2" style="height: 50px;width: 200px;margin-top: 12px;" (click)="viewCurrentLocation()"><img src="../../assets/icons/geo-alt-fill.svg">See Live Location</button>
     <input class="form-control " style="padding: 10px;margin: 10px;" matInput placeholder="Search for patients....." [(ngModel)]="firstName" name="firstName"  (input)="patient()">
 </div>
 <div class="container">
