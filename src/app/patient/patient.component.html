@@ -1,0 +1,17 @@
+<div class="body">
+<div class="container">
+    <h1 class="heading">Patient</h1>
+    <input class="form-control " style="padding: 10px;margin: 10px;" matInput placeholder="Search for patients....." [(ngModel)]="firstName" name="firstName"  (input)="patient()">
+</div>
+<div class="container">
+    <div *ngFor="let item of patients">
+        <div class="patient-box">
+            <p><span class="circle">{{item.MiddleInitial}}</span></p>
+            <p><span class="info-label">Patient Name:</span> <span class="info-value">{{ item.FirstName }} {{ item.LastName }}</span></p>
+            <p><span class="info-label">Nick Name:</span> <span class="info-value">{{ item.Nickname }}</span></p>
+            <br>
+            <button class="btn" (click)="viewPatientDetails(item)">View Details</button>
+        </div>
+    </div>
+</div>
+</div>

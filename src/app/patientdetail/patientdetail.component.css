@@ -1,0 +1,72 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #928ff7;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #c5bce6;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.patient-box:hover {
+    background-color: #e75ba8;
+}
+
+.patient-box {
+    width: 500px;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+
+.patient-box p {
+    margin-bottom: 10px;
+}
+
+.patient-box .info-label {
+    font-weight: bold;
+}
+
+.patient-box .info-value {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #092c8d;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 10px
+}
